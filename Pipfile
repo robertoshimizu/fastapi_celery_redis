@@ -4,6 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+celery = {extras = ["redis"], version = "*"}
+fastapi = {extras = ["all"], version = "*"}
+uvicorn = {extras = ["standard"], version = "*"}
+redis = "*"
 
 [dev-packages]
 
